@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+    background-color: darkcyan;
+}
+
+.result {
+    padding: 15px;
+    background-color: lightslategray;
+}
+
+#randomJoke {
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin: auto;
+    border-top-color: indianred;
+    border-bottom-color: indigo;
+
+    animation: loading 750ms infinite;
+}
+
+@keyframes loading {
+    50% {
+        transform: rotate(1turn);
+    }
+}
